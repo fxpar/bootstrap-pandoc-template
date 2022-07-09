@@ -7,6 +7,7 @@ A template to add some basic bootstrap architecture around a document.
 	* title
 	* author
 	* description
+	* base
 * css
 	* bootstrap 5 min
 	* bootstrap icons
@@ -22,6 +23,8 @@ A template to add some basic bootstrap architecture around a document.
 This template can be applied to other formats than markdown.
 
 pandoc input.md --template bs5.template.html -o output.html
+
+
 
 ## Markdown
 
@@ -47,3 +50,6 @@ More text
 
 ```
 
+## References
+
+* Used by the [markdown to bootstrap](https://github.com/fxpar/markdown-to-bootstrap-pandoc-lua-filter) components filter
