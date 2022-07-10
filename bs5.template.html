@@ -30,6 +30,22 @@ $if(title)$ <title>$title$</title>   $endif$
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+	
+	<!-- Sharing links dropdown -->
+	$if(socialblock)$
+	<div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-Light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Share
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnGroupDrop1">
+	
+	$socialblock$
+	 </ul>
+  </div>
+	
+	</div>
+	$endif$
+	
   </div>
 </nav>
 
@@ -57,7 +73,7 @@ $if(title)$ <title>$title$</title>   $endif$
 		</div>
 		 $if(title)$<h1 class="title">$title$</h1>$endif$
 		 
-		 $if(socialblock)$<div id="headerSocialBlock">$socialblock$</div>$endif$
+		 
 		 
       $body$
 	  
